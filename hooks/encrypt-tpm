@@ -1,0 +1,9 @@
+# Original source from "https://github.com/pawitp/arch-luks-tpm"
+#!/usr/bin/ash
+
+run_hook() {
+    modprobe -a -q tpm_crb >/dev/null 2>&1
+    tpm2_unseal -c 0x81000000 -p pcr:sha1:0,2,4,7 -o /crypto_keyfile.bin
+}
+
+# vim: set ft=sh ts=4 sw=4 et:
