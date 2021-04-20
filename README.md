@@ -227,3 +227,5 @@ https://bentley.link/secureboot/
 https://github.com/archont00/arch-linux-luks-tpm-boot
 
 https://github.com/saucepan14/TPMSecuredArch
+
+https://github.com/electrickite/mkinitcpio-tpm-hook
